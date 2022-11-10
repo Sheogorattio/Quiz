@@ -42,22 +42,22 @@ LANGUAGE LANG_UKRAINIAN, SUBLANG_DEFAULT
 // Dialog
 //
 
-IDD_DIALOG1 DIALOGEX 0, 0, 709, 309
+IDD_DIALOG1 DIALOGEX 0, 0, 730, 310
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "Вікторина"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    DEFPUSHBUTTON   "Завершити",IDOK,627,281,50,14
+    DEFPUSHBUTTON   "Завершити",IDOK,673,290,50,14
     GROUPBOX        "Перенесення столиці УРСР з Харкова до Києва відбулося",IDC_STATIC,18,18,210,48
     GROUPBOX        "Освітня політика якої держави в 1920-ті рр. призвела до",IDC_STATIC,18,72,210,54
     GROUPBOX        "Збройні Сили України було засновано",IDC_STATIC,18,132,210,48
     GROUPBOX        "Набіги яких кочівників було припинено Ярославом Мудрим?",IDC_STATIC,18,186,210,48
     GROUPBOX        "Рейд військових з’єднань армії УНР тилами радянських і",IDC_STATIC,18,240,210,54
-    GROUPBOX        "Кампанія боротьби з «безрідними космополітами», що розгорнулася ",IDC_STATIC,240,18,240,54
-    GROUPBOX        "Які одії пов'язані з діяльність ОУН в роки ДСВ?",IDC_STATIC,240,78,240,60
-    GROUPBOX        "Які положення були в Четвертому Універсалі УЦР",IDC_STATIC,240,138,240,60
-    GROUPBOX        "Хто був Президентом незалежної України?",IDC_STATIC,240,198,240,48
-    GROUPBOX        "Який історичний діяч зображений на фотографії?",IDC_STATIC,512,193,179,48
+    GROUPBOX        "Кампанія боротьби з «безрідними космополітами», що розгорнулася ",IDC_STATIC,262,17,240,54
+    GROUPBOX        "Які одії пов'язані з діяльність ОУН в роки ДСВ?",IDC_STATIC,262,77,240,60
+    GROUPBOX        "Які положення були в Четвертому Універсалі УЦР",IDC_STATIC,262,137,240,60
+    GROUPBOX        "Хто був Президентом незалежної України?",IDC_STATIC,262,197,240,48
+    GROUPBOX        "Який історичний діяч зображений на фотографії?",IDC_STATIC,535,193,179,48
     CONTROL         "1934 р",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,24,30,38,10
     CONTROL         "1919 р",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,24,42,38,10
     CONTROL         "1932 р",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,24,54,38,10
@@ -73,35 +73,41 @@ BEGIN
     CONTROL         "Брусилівський прорив",IDC_RADIO13,"Button",BS_AUTORADIOBUTTON | WS_GROUP,24,258,90,10
     CONTROL         "Перший зимовий похід",IDC_RADIO14,"Button",BS_AUTORADIOBUTTON,24,270,92,10
     CONTROL         "Чортківська офензива",IDC_RADIO15,"Button",BS_AUTORADIOBUTTON,24,282,91,10
-    CONTROL         "антисемітський характер",IDC_RADIO16,"Button",BS_AUTORADIOBUTTON | WS_GROUP,246,36,100,10
-    CONTROL         "антицерковний характер",IDC_RADIO17,"Button",BS_AUTORADIOBUTTON,246,48,99,10
-    CONTROL         "антиукраїнський характер",IDC_RADIO18,"Button",BS_AUTORADIOBUTTON,246,60,103,10
-    CONTROL         "Створення похідних груп",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,246,90,99,10
+    CONTROL         "антисемітський характер",IDC_RADIO16,"Button",BS_AUTORADIOBUTTON | WS_GROUP,269,35,100,10
+    CONTROL         "антицерковний характер",IDC_RADIO17,"Button",BS_AUTORADIOBUTTON,269,47,99,10
+    CONTROL         "антиукраїнський характер",IDC_RADIO18,"Button",BS_AUTORADIOBUTTON,269,59,103,10
+    CONTROL         "Створення похідних груп",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,269,89,99,10
     CONTROL         "Створення Українського штабу партизанського руху (УШПР)",IDC_CHECK2,
-                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,246,102,219,10
-    CONTROL         "Створення УПА",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,246,114,67,10
-    CONTROL         """рейкова війна""",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,246,126,69,10
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,269,101,219,10
+    CONTROL         "Створення УПА",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,269,113,67,10
+    CONTROL         """рейкова війна""",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,269,125,69,10
     CONTROL         "УНР проголошується незалежною державою українського народу",IDC_CHECK5,
-                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,246,150,238,10
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,269,149,238,10
     CONTROL         "УЦР планує провести земельну реформу в інтересах селян",IDC_CHECK6,
-                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,246,162,215,10
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,269,161,215,10
     CONTROL         "Скасовувалася смертна кара й оголошувалася амністія",IDC_CHECK7,
-                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,246,174,203,10
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,269,173,203,10
     CONTROL         "З усіма сусідніми країнами УНР прагне жити у мирі та злагоді",IDC_CHECK8,
-                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,246,186,222,10
-    CONTROL         "В. Ющенко",IDC_CHECK9,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,246,210,53,10
-    CONTROL         "М. Грушевський",IDC_CHECK10,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,246,222,70,10
-    CONTROL         "Л. Кравчук",IDC_CHECK11,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,246,234,53,10
-    CONTROL         "С. Петлюра",IDC_RADIO19,"Button",BS_AUTORADIOBUTTON | WS_GROUP,532,204,55,10
-    CONTROL         "С. Бандера",IDC_RADIO20,"Button",BS_AUTORADIOBUTTON,532,216,54,10
-    CONTROL         "М. Грушевський",IDC_RADIO21,"Button",BS_AUTORADIOBUTTON,532,228,70,10
-    CONTROL         "А. Мельник",IDC_RADIO22,"Button",BS_AUTORADIOBUTTON,603,204,54,10
-    CONTROL         "Є. Коновалець",IDC_RADIO23,"Button",BS_AUTORADIOBUTTON,603,216,65,10
-    CONTROL         "Р. Шухевич",IDC_RADIO24,"Button",BS_AUTORADIOBUTTON,603,228,54,10
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,269,185,222,10
+    CONTROL         "В. Ющенко",IDC_CHECK9,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,269,209,53,10
+    CONTROL         "М. Грушевський",IDC_CHECK10,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,269,221,70,10
+    CONTROL         "Л. Кравчук",IDC_CHECK11,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,269,233,53,10
+    CONTROL         "С. Петлюра",IDC_RADIO19,"Button",BS_AUTORADIOBUTTON | WS_GROUP,555,204,55,10
+    CONTROL         "С. Бандера",IDC_RADIO20,"Button",BS_AUTORADIOBUTTON,555,216,54,10
+    CONTROL         "М. Грушевський",IDC_RADIO21,"Button",BS_AUTORADIOBUTTON,555,228,70,10
+    CONTROL         "А. Мельник",IDC_RADIO22,"Button",BS_AUTORADIOBUTTON,626,204,54,10
+    CONTROL         "Є. Коновалець",IDC_RADIO23,"Button",BS_AUTORADIOBUTTON,626,216,65,10
+    CONTROL         "Р. Шухевич",IDC_RADIO24,"Button",BS_AUTORADIOBUTTON,626,228,54,10
     LTEXT           "ліквідації на українських землях українськомовних шкіл?",IDC_STATIC,24,81,192,8
     LTEXT           " білогвардійських військ у 1919–1920 рр. увійшло в історію як",IDC_STATIC,21,250,216,8
-    LTEXT           "в Українській РСР у повоєнні роки, мала яскраво виражений",IDC_STATIC,245,27,205,8
-    CONTROL         IDB_BITMAP1,IDC_PICTURE,"Static",SS_BITMAP,515,14,165,171
+    LTEXT           "в Українській РСР у повоєнні роки, мала яскраво виражений",IDC_STATIC,267,26,205,8
+    CONTROL         IDB_BITMAP1,IDC_PICTURE,"Static",SS_BITMAP,538,14,165,171
+    EDITTEXT        IDC_EDIT1,593,257,85,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,507,270,51,14,ES_AUTOHSCROLL
+    LTEXT           "Завдяки затримці радянських військ ісля бою під Крутами, УНР змогла укласти мирну угоду з Німецькою, ",IDC_STATIC,258,247,465,9
+    LTEXT           "Австро-Угорською, Османською імперіями і Болгарським царством. Договір було укладено в місті ",IDC_STATIC,257,259,335,10
+    LTEXT           "Після підписання мирної угоди, УЦР було проголошено (з великої літери)",IDC_STATIC,257,272,248,8
+    LTEXT           "універсал.",IDC_STATIC,562,273,72,8
 END
 
 
@@ -116,9 +122,9 @@ BEGIN
     IDD_DIALOG1, DIALOG
     BEGIN
         LEFTMARGIN, 7
-        RIGHTMARGIN, 702
+        RIGHTMARGIN, 723
         TOPMARGIN, 7
-        BOTTOMMARGIN, 302
+        BOTTOMMARGIN, 304
     END
 END
 #endif    // APSTUDIO_INVOKED

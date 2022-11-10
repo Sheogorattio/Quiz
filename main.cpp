@@ -4,7 +4,7 @@
 
 BOOL CALLBACK DlgProc(HWND, UINT, WPARAM, LPARAM);
 
-HWND hBoxArr[11], hRadioArr[24], hPicture;
+HWND hBoxArr[11], hRadioArr[24], hPicture, hEdit1, hEdit2;
 
 HBITMAP hBmp;
 
@@ -21,6 +21,8 @@ BOOL CALLBACK DlgProc(HWND hWnd, UINT uMessage, WPARAM wParam, LPARAM lParam) {
 			hPicture = GetDlgItem(hWnd, IDC_PICTURE);
 			hBmp = LoadBitmap(GetModuleHandle(NULL), MAKEINTRESOURCE(IDB_BITMAP1));
 			SendMessage(hPicture, STM_SETIMAGE, 0, LPARAM(hBmp));
+			hEdit1 = GetDlgItem(hWnd, IDC_EDIT1);
+			hEdit2 = GetDlgItem(hWnd, IDC_EDIT2);
 			return TRUE;
 		
 		case WM_CLOSE:
@@ -34,7 +36,7 @@ BOOL CALLBACK DlgProc(HWND hWnd, UINT uMessage, WPARAM wParam, LPARAM lParam) {
 				INT nAnswersCheckB1[2]= { IDC_CHECK1, IDC_CHECK3};
 				INT nAnswersCheckB2[3] = { IDC_CHECK5, IDC_CHECK6, IDC_CHECK8 };
 				INT nAnswersCheckB3[3] = { IDC_CHECK9, IDC_CHECK10, IDC_CHECK11 };
-				INT nMaxMark = 10, nErrors = nMaxMark;
+				INT nMaxMark = 12, nErrors = nMaxMark;
 				for (int i = 0; i < 7; i++) {
 					if (BST_CHECKED == SendDlgItemMessage(hWnd, nAnswersRadio[i], BM_GETCHECK, 0, 0)) nErrors--;
 				}
@@ -72,6 +74,12 @@ BOOL CALLBACK DlgProc(HWND hWnd, UINT uMessage, WPARAM wParam, LPARAM lParam) {
 					}
 				}
 				CheckBoxPoints = 0;
+				TCHAR Edit1[20], Edit2[20];
+				GetWindowText(hEdit1, Edit1, 20);
+				GetWindowText(hEdit2, Edit2, 20);
+				BOOL bResEdit1 = 0, bResEdit2 = 0;
+				if (!lstrcmp(Edit1, TEXT("Берестя"))) nErrors--;
+				if (!lstrcmp(Edit2, TEXT("Третій"))) nErrors--;
 				INT mark = nMaxMark - nErrors;
 				DOUBLE result = (double)mark/nMaxMark*100;
 				
