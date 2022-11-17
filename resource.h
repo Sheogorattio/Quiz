@@ -3,7 +3,7 @@
 // Used by Quiz.rc
 //
 #define IDD_DIALOG1                     101
-#define IDB_BITMAP1                     104
+#define IDB_BITMAP3                     106
 #define IDC_RADIO1                      1001
 #define IDC_RADIO2                      1002
 #define IDC_RADIO3                      1003
@@ -41,15 +41,20 @@
 #define IDC_CHECK11                     1035
 #define IDC_EDIT1                       1036
 #define IDC_EDIT2                       1037
+#define IDC_EDIT3                       1038
+#define IDC_EDIT4                       1039
 #define IDC_PICTURE                     1040
+#define IDC_SPIN1                       1041
+#define IDC_SPIN2                       1042
+#define IDC_PROGRESS1                   1043
 
 // Next default values for new objects
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        105
+#define _APS_NEXT_RESOURCE_VALUE        107
 #define _APS_NEXT_COMMAND_VALUE         40001
-#define _APS_NEXT_CONTROL_VALUE         1038
+#define _APS_NEXT_CONTROL_VALUE         1044
 #define _APS_NEXT_SYMED_VALUE           101
 #endif
 #endif

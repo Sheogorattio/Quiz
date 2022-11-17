@@ -30,7 +30,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="picture_11zon.bmp">
+    <Image Include="Легенда.bmp">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>
